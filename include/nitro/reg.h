@@ -10,7 +10,7 @@ extern "C" {
 #define REG_BASE 0x4000000
 
 #define REG_POWER_CNT (*(vu16 *) (REG_BASE | 0x304))
-#define REG_IME (*(vu32 *) (REG_BASE | 0x208))
+#define REG_IME (*(vu16 *) (REG_BASE | 0x208))
 
 #define REG_DISPSTAT (*(vu16 *) (REG_BASE | 0x4))
 #define REG_VCOUNT (*(vu16 *) (REG_BASE | 0x6))

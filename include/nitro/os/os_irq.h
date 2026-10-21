@@ -29,6 +29,12 @@ inline u16 OS_EnableIrq(void) {
     return oldVal;
 }
 
+inline u16 OS_DisableIrq(void) {
+    u16 oldVal = REG_IME;
+    REG_IME    = 0;
+    return oldVal;
+}
+
 #ifdef __cplusplus
 } // extern "C"
 #endif
