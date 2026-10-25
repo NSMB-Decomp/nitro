@@ -1,6 +1,3 @@
-#ifndef _NITRO_GX_INIT_H
-#define _NITRO_GX_INIT_H
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -46,6 +43,4 @@ inline void G2S_ChangeBlendAlpha(u32 param1, u32 param2) {
 
 #ifdef __cplusplus
 }
-#endif
-
 #endif

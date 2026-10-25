@@ -65,9 +65,13 @@ _vcount_wait_end:
     tst sp, #0x4
     subeq sp, sp, #0x4
 #else
-    mov sp, r0
+//#elif NITRO_VERSION >= 0x20000000
+    sub sp, r0, #0x4
+    ldr r1, =0x600
+//#else
+//    mov sp, r0
+//    ldr r1, =0x800
 #endif
-    ldr r1, =0x800
     sub r1, r0, r1
     mov r0, #0x1f
     msr cpsr_fsxc, r0
