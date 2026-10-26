@@ -14,6 +14,7 @@ extern "C" {
 #include "nitro/gx/gx_load.h"
 #include "nitro/gx/gx_obj.h"
 #include "nitro/gx/gx_state.h"
+#include "nitro/gx/gx_vram.h"
 #include "nitro/reg.h"
 #include "nitro/types.h"
 

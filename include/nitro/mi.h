@@ -24,6 +24,7 @@ void MIi_CpuCopy32(const void *src, void *dst, u32 size);
 void MI_CpuFill16(u16 value, void *dst, u32 size);
 void MIi_CpuCopyFast(const void *src, void *dst, u32 size);
 void MIi_CpuClearFast(u32 value, void *ptr, u32 size);
+void MIi_CpuClear16(u32 value, void *ptr, u32 size);
 void MIi_CpuClear32(u32 value, void *ptr, u32 size);
 
 void MI_Copy32B(const void *src, void *dst);
