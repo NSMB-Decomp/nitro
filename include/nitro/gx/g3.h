@@ -207,7 +207,7 @@ inline void G3_End(void) {
 inline void G3_SwapBuffers(u32 sortMode, u32 bufferMode) {
     // Unclear what values these macros have and how they are meant to be combined
     // GX_SORTMODE_MANUAL | GX_BUFFERMODE_Z == 0x1
-    REG_GFX_FIFO_SWAP_BUFFERS = 0x1;
+    REG_GFX_FIFO_SWAP_BUFFERS = (sortMode << 1) | bufferMode;
 }
 
 inline BOOL G3X_IsGeometryBusy(void) {
