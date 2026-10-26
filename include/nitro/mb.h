@@ -44,10 +44,10 @@ typedef struct MBUserInfo {
     u16 nameLength;
     char name[1];
 } MBUserInfo;
-
-BOOL MB_IsMultiBootChild(void) {
+inline BOOL MB_IsMultiBootChild_Inline(void) {
     return REG_027FFC40 == 0x2;
 }
+BOOL MB_IsMultiBootChild(void);
 inline const MBParentBssDesc *MB_GetMultiBootParentBssDesc(void) {
     BOOL b = REG_027FFC40 == 2;
     if (b) {
